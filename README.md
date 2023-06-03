@@ -1,2 +1,1 @@
-# fotograf-galeri
-php-jquery fotograf galeri
+#PHP & jQuery FOTOĞRAF GALERİ
