@@ -1,0 +1,231 @@
+* {
+    color: white;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-shrink: 0;
+    margin-bottom: 0 !important;
+}
+
+main {
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.resimler img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.resimler div {
+    padding: .25rem;
+}
+
+.resim-alan {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resim-alan:after,
+.pencere {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    width: 100vw;
+    transform: translate(-50%, -50%);
+    background: rgba(22, 22, 22, 0.8);
+    backdrop-filter: blur(.2rem);
+    z-index: -1;
+}
+
+.resim-alan img {
+    height: 70%;
+    max-width: 90%;
+    object-fit: contain;
+}
+
+.cikis-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.resim-sil-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.sablon-img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.resim-ekle {
+    width: 100%;
+    background: red;
+    margin-top: 1rem;
+    padding: .5rem;
+    border-radius: .2rem;
+}
+
+.klasor-ekle {
+    width: 100%;
+    background: blue;
+    margin-top: 1rem;
+    padding: .5rem;
+    border-radius: .2rem;
+}
+
+.klasor {
+    margin-top: 1rem;
+    border: 1px solid gray;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    overflow: hidden;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    height: 143px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.klasor .col {
+    padding: 0%;
+}
+
+.klasor-isim {
+    padding: .5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.resim-ekle-alan,
+.klasor-ekle-alan {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.resim-ekle-kutu,
+.klasor-ekle-kutu {
+    padding: 1rem;
+    border-radius: .25rem;
+    background-color: #161616;
+    width: 28rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resim-ekle-baslik {
+    font-size: calc(1rem + .5vw);
+    text-align: center;
+    flex: 0 0 auto;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.resim-sec-button,
+.resim-ekle-onay,
+.resim-ekle-vazgec,
+.iptal-button,
+.klasor-ekle-onay,
+.klasor-ekle-iptal {
+    margin-top: .25rem;
+    flex: 0% 0% auto;
+    width: 48%;
+    padding: .25rem;
+}
+
+.sonraki-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.onceki-button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.resimonizleme {
+    max-height: 20rem;
+    max-width: 20%;
+    padding: .2rem;
+    object-fit: contain;
+}
+
+.resim-isim {
+    flex: 0 0 auto;
+    width: 90%;
+    border: none;
+    margin-bottom: 1rem;
+    outline: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.klasor_ekle_baslik {
+    flex: 0 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.klasor-isim-alan {
+    flex: 0 0 auto;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.klasor>div:nth-child(1) {
+    flex: 1 1 auto;
+    width: revert;
+    border-bottom: 1px solid gray;
+}
+
+.resim-onizleme-kutu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
